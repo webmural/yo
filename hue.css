@@ -1,0 +1,24 @@
+::selection {
+  background: indigo;
+  color: hotpink;
+}
+
+:root {
+  background-color: plum;
+  background-image: conic-gradient(plum, hotpink 10%, mediumpurple 50%, coral);
+  color: indigo;
+}
+
+:any-link {
+  color: inherit;
+  box-shadow:
+    0 0 1vmax 20vmax salmon,
+    0 0 3vmax 30vmax violet;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    background: gainsboro;
+    color: #201;
+  }
+}
